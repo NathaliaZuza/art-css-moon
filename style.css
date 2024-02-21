@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* #526FA3
+    #EDD992
+    #E9C96E
+    #181915
+    #F4F4F4
+    #ADACAA
+    #24221E */
+}
+
+body{
+    background-color: #273b55;
+}
+
+.container{
+    padding: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxArt{
+    height: 600px;
+    background-color: #1e3047;
+    width: 500px;
+    box-shadow: 5px 5px 4px #0000000c;
+    position: relative;
+    overflow: hidden;
+}
+
+.moon{
+    background-color: #EDD992;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.moon__circle{
+    background-color: #E9C96E;
+    border-radius: 50%;
+    position: relative;
+}
+
+.moon__circle::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    left: -50px;
+    background-color: #e9c86ecf;
+    height: 300%;
+    width: 300%;
+    filter: blur(70px);
+}
+
+.circle1, .circle2, .circle3{
+    position: absolute;
+}
+
+.circle1{
+    height: 25px;
+    width: 25px;
+    top: 15px;
+    right: 20px;
+}
+
+.circle2{
+    height: 20px;
+    width: 20px;
+    top: 38px;
+    right: 5px;
+}
+
+.circle3{
+    height: 15px;
+    width: 15px;
+    top: 43px;
+    right: 28px;
+}
