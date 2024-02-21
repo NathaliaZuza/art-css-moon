@@ -85,3 +85,61 @@ body{
     top: 43px;
     right: 28px;
 }
+
+.star, .star::after{
+    border-radius: 50%;
+    height: 14px;
+    width: 4px;
+    transform: rotate(137deg);
+    background-color: #e6dede;
+}
+
+.star::after{
+    content: "";
+    position: absolute;
+    transform: rotate(87deg);
+}
+
+.starWrapper{
+    position: absolute;
+    top: 8%;
+    left: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    transition: opacity 100ms ease-in-out;
+    transform: scale(0.9);
+    animation: pulse 4s infinite;
+}
+
+.star2{
+    top: 20%;
+    left: auto;
+    transform: scale(0.7);
+    right: 35%;
+    animation: pulse 4s 1s infinite;
+}
+
+.star3{
+    top: 16px;
+    left: auto;
+    transform: scale(1);
+    right: 20px;
+    animation: pulse 5s infinite;
+}
+
+.star4{
+    top: 30%;
+    left: 5%;
+    transform: scale(0.7);
+    right: auto;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse{
+    0%{ opacity: 0.2; }
+    50%{ opacity: 0.9; }
+    100%{ opacity: 0.2; }
+}
